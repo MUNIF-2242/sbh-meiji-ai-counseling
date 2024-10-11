@@ -1,38 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI Counseling App - README
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This is a React-based chatbot interface that allows users to select a specific persona (athletes in this case) and engage in conversation. The chatbot responses are powered by the OpenAI API, providing dynamic, contextually relevant replies based on the selected persona. The app features a clean UI with a chat panel, a sidebar for additional persona information, and backend integration for handling the OpenAI API interactions.
+
+## Features
+
+- Select athlete personas and chat with a chatbot emulating that persona.
+- Real-time user-to-bot conversations.
+- Athlete details and metrics displayed in the sidebar.
+- Responsive design.
+- Backend API integration to handle OpenAI API requests and responses.
+
+## Technologies Used
+
+- **Frontend:** Next js
+- **Backend:** Next.js
+- **API Integration:** OpenAI API (GPT-3.5-turbo)
+- **HTTP Client:** Axios
+- **State Management:** React Context API
+- **Environment Variables:** .env.local (For OpenAI API key)
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- Node.js (>= 14.x.x)
+- npm or yarn
+
+You will also need an OpenAI API key, which you can obtain by signing up at [OpenAI](https://beta.openai.com/signup/).
+
+## Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/sbh-meiji-ai-counseling.git
+cd sbh-meiji-ai-counseling
+```
+
+### 2. Set Up Environment Variables
+
+Create a `.env.local` file in the root of your project to store your OpenAI API key:
+
+```bash
+NEXT_PUBLIC_OPENAI_API_KEY=your-openai-api-key-here
+```
+
+### 3. Run the Application
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
